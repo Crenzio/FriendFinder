@@ -10,16 +10,6 @@ module.exports = function (app) {
         var submit = req.body;
         var ally = {};
 
-        for (var i = 0; i < submit.scores.length; i++) {
-            if (submit.scores[i] == "1 (Strongly Disagree)") {
-                submit.scores[i] = 1;
-            } else if (submit.scores[i] == "5 (Strongly Agree)") {
-                submit.scores[i] = 5;
-            } else {
-                submit.scores[i] = parseInt(submit.scores[i]);
-            }
-        }
-
         // I'm afraid I had to indulge in quite a bit of sample code to get through this next part. 
         // Realisitically, I probably copied too much to receive credit here.
         // Though, for what it's worth, I did study the code and tinker with it after the fact.   
