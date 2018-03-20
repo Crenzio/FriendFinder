@@ -5,6 +5,8 @@ body {
 button {
     background-color: lightblue;
     border-radius: 25px;
+    width: 50%;
+    padding: 5px;  
 }
 
 div.line {
@@ -13,6 +15,11 @@ div.line {
     margin-right: 20px;
     background-color: #000000;
     margin-bottom: 20px;
+}
+
+h3.question {
+    font-weight: bolder;
+    text-decoration: underline;
 }
 
 header {
@@ -34,4 +41,8 @@ img.sword {
     float: left;
     height: 50px;
     width: 50px; 
+}
+
+select.query {
+    width: 100%; 
 }
