@@ -79,7 +79,7 @@ var friends = [{
             3
         ]
 }, {
-    name: "The Litch",
+    name: "The Lich",
     photo: "https://vignette.wikia.nocookie.net/adventuretimewithfinnandjake/images/9/92/Lich_Image.png/revision/latest?cb=20110523013725",
     scores:
         [
