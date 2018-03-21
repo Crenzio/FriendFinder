@@ -6,8 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
     <title>Every Hero Needs a Friend</title>
 </head>
 
@@ -15,13 +20,13 @@
 
     <header>
 
-        <h3  class="question">Your Name (Required)</h3>
+        <h3 class="question">Your Name (Required)</h3>
         <input type="text" id="name" class="form-control" required>
 
         <h3 class="question">Link to Photo Image (Required)</h3>
         <input type="text" id="photo" class="form-control" required>
 
-        <br /> 
+        <br />
 
         <div class="line"> </div>
 
@@ -138,17 +143,53 @@
 
         <h3 class="question"> </h3>
 
-        <button type="submit" class="btn btn-primary btn-lg btn-block">
+        <button type="button" id="myBtn" class="btn btn-primary btn-lg btn-block">
             <aria-hidden="true">
                 Click Here to Get Submit!</button>
-
         </div>
 
     </header>
 
-    <div align="center">
-        <img src="assets/images/frame4.jpg">
+    <div align="center" class="bottom"></div>
+
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Modal Header</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Some text in the modal.</p>
+                </div>
+            </div>
+
+        </div>
     </div>
+
+    <script>
+
+        $(document).ready(function () {
+
+            $("#myBtn").click(function () {
+                $("#myModal").modal();
+
+                var userAnswers = [];
+                $('select').each(function () {
+                    userAnswers.push($(this).val());
+                    console.log(userAnswers);
+                });
+
+                for (var i = 0; i < userAnswers.length; i++) {
+                    
+                }
+
+            });
+
+        });
+
+    </script>
 
 </body>
 

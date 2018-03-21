@@ -10,17 +10,16 @@ module.exports = function (app) {
         var submit = req.body;
         var ally = {};
 
-
         // I'm afraid I had to indulge in quite a bit of sample code to get through this next part. 
-        // Realisitically, I probably copied too much to receive credit here.
+        // I'm worrited I might have borrowed too much.
         // Though, for what it's worth, I did study the code and tinker with it after the fact.   
 
         var bookmark = 0;
 
-        // The sample code I used had an essential comment here.
-        // It noted that the maximum different per question is 4 (since the lowest # the user can enter is 1 and the highest # is 5).
-        // Therefore, this variable should be [Max Diff] * [# of Questions]. 
-        // 40.
+        // The sample code I used had an essential comment here about max differences.
+        // In my case, the max difference per question is 4 (since the lowest # the user can enter is 1 and the highest # is 5).
+        // Therefore, this next variable should be [Max Diff] * [# of Questions]. 
+        // Which is 40.
         // I would not have figured this out on my own...not quickly enough, at least.  
         var maxDiff = 40;
 
