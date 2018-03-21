@@ -158,10 +158,15 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Modal Header</h4>
+                    <h4 class="modal-title"></h4>
                 </div>
                 <div class="modal-body">
-                    <p>Some text in the modal.</p>
+                    <!-- Insert correct friend name into "newGuy" field  -->
+                    <p id="newGuy"></p>
+                    <!-- Creat SRC, Width, Height tags
+                    insert correct infto to newBro image
+                    Insert 250 into Height and Width  -->
+                    <img id="newBro">
                 </div>
             </div>
 
@@ -178,11 +183,22 @@
                 var userAnswers = [];
                 $('select').each(function () {
                     userAnswers.push($(this).val());
-                    console.log(userAnswers);
                 });
 
                 for (var i = 0; i < userAnswers.length; i++) {
-                    
+                    if (userAnswers[i] == "") {
+                        $(".modal-title").html("<strong> Please answer every question before continuing. </strong>")
+                    }
+                    else {
+
+                        $.getJSON('/api/friends', function (data) {
+                            console.log(data);
+                        });
+
+                        $(".modal-title").html("<strong> Your new adventuring buddy is... </strong>")
+                        // Add name to NewGuy field
+                        // Add appropriate SRC (photo URL), Height (250) and Width (250) data to newBro image
+                    }
                 }
 
             });
