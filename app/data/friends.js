@@ -1,6 +1,6 @@
 var friends = [{
     name: "Billy",
-    photo: "https://www.pinterest.com/explore/billy-adventure-time/",
+    photo: "https://i.ytimg.com/vi/auQCYHbuaQY/maxresdefault.jpg",
     scores:
         [
             5,
@@ -48,7 +48,7 @@ var friends = [{
         ]
 },{
     name: "Garett",
-    photo: "https://www.giantbomb.com/forums/general-discussion-30/twelve-years-late-thief-ii-the-metal-age-1425760/",
+    photo: "https://vignette.wikia.nocookie.net/thief/images/7/7c/Garrett2.jpg/revision/latest?cb=20080624225507",
     scores:
         [
             5,
@@ -112,7 +112,7 @@ var friends = [{
         ]
 }, {
     name: "Rincewind",
-    photo: "https://wiki.lspace.org/mediawiki/Rincewind",
+    photo: "https://wiki.lspace.org/mediawiki/images/thumb/f/f0/Rincewind_in_Ankh_Morpork.jpg/200px-Rincewind_in_Ankh_Morpork.jpg",
     scores:
         [
             4,
